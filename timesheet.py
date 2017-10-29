@@ -5,9 +5,9 @@
 ### Use following section to set your personal default values!
 ###
 default_name = 'Diederichsen, Rasmus'
-default_unit_of_organisation = "FB Mathematik/Informatik, Institut für Informatik"
-default_hours = 25
-default_days_of_week = [0, 1, 2, 3, 4]
+default_unit_of_organisation = "Institut für Kognitionswissenschaft"
+default_hours = 40
+default_days_of_week = [0, 3, 4, 5]
 default_start_hour = 8
 default_end_hour = 20
 default_max_hours = 6
@@ -174,7 +174,7 @@ def create():
 
 
 
-    ### 
+    ###
     ### BUILD
     ###
 
@@ -286,16 +286,16 @@ def init():
 
 
     \begin{addmargin}{2.2cm}
-      
+
       \begin{tabular}{l c}
         \textbf{\large Erfassung der geleisteten Arbeitszeiten} & \\
       \end{tabular}
-      
+
       \vspace{0.5cm}
       \begin{bfseries}
       \begin{tabular}{p{.4\linewidth} >{\centering\arraybackslash}p{.53\linewidth}}
         Name, Vorname der Hilfskraft: & """,
-        
+
     # Name
 
     r"""
@@ -332,24 +332,24 @@ def init():
 
     r"""
       \end{tabularx}
-      
+
       \vspace{0.1cm}
 
       \vspace{1.5cm}
 
-      $\rule{7.9cm}{0.1mm}$ ~~~ $\rule{7.9cm}{0.1mm}$
+      $\rule{7.9cm}{0.1mm}$ \hfill $\rule{7.9cm}{0.1mm}$
 
       \vspace{0.3cm}
-      Datum, Unterschrift der Hilfskraft \hspace{3.65cm} Datum, Unterschrift der Leiterin / des Leiter der OE
-      
-      \hspace{9.5cm}alternativ: Vorgesetzte / Vorgesetzter
+      Datum, Unterschrift der Hilfskraft \hfill Datum, Unterschrift der Leiterin / des Leiter der OE\\
+
+      \hfill alternativ: Vorgesetzte / Vorgesetzter
 
     \end{addmargin}
 
     \end{document}
     """
     ]
-    
+
     global entry_template
     entry_template = "{}&{}&&{}&{}&{}&{}\\\\\\hline\n"
 
